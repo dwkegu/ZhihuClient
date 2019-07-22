@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_main1"
+        title="首页"/>
+    <tab id="@+id/tab_main2"
+        title="首页"/>
+    <tab id="@+id/tab_main3"
+        icon="@drawable/ic_main"
+        title="首页" />
+</tabs>

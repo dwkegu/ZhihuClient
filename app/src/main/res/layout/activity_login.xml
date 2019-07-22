@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_bg">
+
+    <TextView
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="知乎"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:layout_marginBottom="160dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_username"
+        android:layout_marginTop="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:hint="邮箱或者手机号"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+    <TableRow
+        android:id="@+id/tr_verify_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/iv_verify"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:maxWidth="100dp"
+            android:maxHeight="60dp"/>
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:ems="4"/>
+    </TableRow>
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_round_accent"
+        android:elevation="4dp"
+        android:textColor="@color/colorPrimaryInverse"
+        android:text="->"
+        android:textSize="28sp"/>
+
+</LinearLayout>
